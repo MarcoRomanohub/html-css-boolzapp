@@ -24,10 +24,8 @@ body{
 }
 
 i{
-  background-color: white;
   color: #BABDBF;
-  margin: 0 20px;
-  vertical-align: middle;
+  margin: 0 10px;
 }
 
 .container{
@@ -56,6 +54,16 @@ i{
 .topbar{
   background-color: #EAEAEA;
   height: 60px;
+  justify-content: space-between;
+}
+
+.top-nav{
+  align-items: center;
+  margin-right: 20px;
+}
+
+.top-nav i{
+  font-size: 1.5rem;
 }
 
 .chat-row{
@@ -64,6 +72,26 @@ i{
 
 .notifications{
   background-color: #8EDAFA;
+}
+
+.circle-img{
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.circle-img i{
+  color: #8EDAFA;
+}
+
+.notifications h5{
+  margin-top: 5px;
+  text-decoration: underline;
 }
 
 nav{
@@ -115,7 +143,7 @@ nav input{
   align-items: center;
 }
 
-.chat-row .profile-img{
+.profile-img{
   border-radius: 50%;
   overflow: hidden;
   width: 50px;
@@ -138,7 +166,8 @@ nav input{
   width: 150px;
 }
 
-.chat-text h6{
+.chat-text h6,
+.chat-text h5{
   opacity: 50%;
 }
 
@@ -154,12 +183,20 @@ nav input{
   .chat{
     width: 100px;
   }
+
+  .last-chat{
+    height: 100%;
+  }
+
+  .last-chat .chat-row{
+    width: 80px;
+  }
   .active-chat{
     width: 90%;
   }
 
-  .notifications,
-  .search,
+  .top-nav,
+  .remove,
   .text-container{
     display: none;
   }
