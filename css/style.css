@@ -23,6 +23,13 @@ body{
   display: flex;
 }
 
+i{
+  background-color: white;
+  color: #BABDBF;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
 .container{
   margin: 0 auto;
   width: 80vw;
@@ -35,15 +42,70 @@ body{
 }
 
 .chat{
-  width: 300px;
+  width: 380px;
+  height: 100%;
   border: 1px solid green;
 }
 
 .active-chat{
-  width: 75%;
+  width: 70%;
   border: 1px solid blue;
 }
 
+.topbar{
+  background-color: #EAEAEA;
+  height: 60px;
+}
+
+.chat-row{
+  height: 70px;
+}
+
+.notifications{
+  background-color: #8EDAFA;
+}
+
+nav{
+  height: 45px;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+}
+
+.search{
+  display: flex;
+  width: 95%;
+  border: 1px solid #F5F5F5;
+  background-color: white;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.search div{
+  display: flex;
+  align-items: center;
+}
+
+nav input{
+  border: none;
+  width: 100%;
+}
+
+::placeholder{
+  color: #c9caca;
+}
+
+.last-chat{
+  background-color: #FAFAFA;
+  overflow: scroll;
+  height: 75%;
+}
+
+.last-chat .chat-row{
+  background-color: white;
+  margin-bottom: 2px;
+  width: 350px;
+}
 
 /***************************************/
 /***************RESPONSIVE**************/
