@@ -8,4 +8,66 @@ img{
 }
 body{
   font-family: 'Lato', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debug{
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80vw;
+  height: 95vh;
+}
+
+.row{
+  width: 100%;
+  height: 100%;
+}
+
+.chat{
+  width: 300px;
+  border: 1px solid green;
+}
+
+.active-chat{
+  width: 75%;
+  border: 1px solid blue;
+}
+
+
+/***************************************/
+/***************RESPONSIVE**************/
+
+/* TABLET 992 */
+@media screen and (max-width:992px) {
+  .container{
+    width: 100vw;
+    height: 100vh;
+  }
+  .chat{
+    width: 100px;
+  }
+  .active-chat{
+    width: 90%;
+  }
+}
+
+/* MOBILE 542 */
+@media screen and (max-width:542px) {
+  .chat{
+    display: none;
+  }
+  .active-chat{
+    width: 100%;
+  }
 }
