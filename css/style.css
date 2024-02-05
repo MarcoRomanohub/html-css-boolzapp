@@ -34,6 +34,7 @@ i{
   margin: 0 auto;
   width: 80vw;
   height: 95vh;
+  overflow: hidden;
 }
 
 .row{
@@ -98,13 +99,47 @@ nav input{
 .last-chat{
   background-color: #FAFAFA;
   overflow: scroll;
-  height: 75%;
+  height: 100%;
 }
 
 .last-chat .chat-row{
   background-color: white;
   margin-bottom: 2px;
   width: 350px;
+}
+
+.img-container{
+  width: 80px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-row .profile-img{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.text-container{
+  align-items: center;
+}
+
+.text-container .chat-text{
+  height: 40px;
+  width: 260px;
+  justify-content: space-between;
+}
+
+.last-sms{
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.chat-text h6{
+  opacity: 50%;
 }
 
 /***************************************/
