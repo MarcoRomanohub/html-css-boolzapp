@@ -59,7 +59,7 @@ i{
 }
 
 .chat-row{
-  height: 70px;
+  height: 90px;
 }
 
 .notifications{
@@ -99,7 +99,7 @@ nav input{
 .last-chat{
   background-color: #FAFAFA;
   overflow: scroll;
-  height: 100%;
+  height: 75%;
 }
 
 .last-chat .chat-row{
@@ -156,6 +156,12 @@ nav input{
   }
   .active-chat{
     width: 90%;
+  }
+
+  .notifications,
+  .search,
+  .text-container{
+    display: none;
   }
 }
 
