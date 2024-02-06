@@ -65,6 +65,12 @@ i{
   background-color: #EAEAEA;
   height: 60px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.active-chat .topbar{
+  width: 100%;
+  justify-content: space-between;
 }
 
 .top-nav{
@@ -205,9 +211,9 @@ nav input{
     width: 90%;
   }
 
-  .top-nav,
+  .chat .top-nav,
   .remove,
-  .text-container{
+  .chat .text-container{
     display: none;
   }
 }
@@ -219,5 +225,8 @@ nav input{
   }
   .active-chat{
     width: 100%;
+  }
+  .active-chat .top-nav{
+    display: none;
   }
 }
