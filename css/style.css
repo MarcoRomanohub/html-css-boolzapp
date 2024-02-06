@@ -9,9 +9,19 @@ img{
 body{
   font-family: 'Lato', sans-serif;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #409689 0,
+    #409689 15%,
+    #DADBD4 15%,
+    #DADBD4 100%);
+  }
+  
+  main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .debug{
@@ -126,8 +136,8 @@ nav input{
 
 .last-chat{
   background-color: #FAFAFA;
-  overflow: scroll;
-  height: 75%;
+  overflow-y: scroll;
+  height: calc(100% - 60px - 90px - 45px)
 }
 
 .last-chat .chat-row{
@@ -181,7 +191,7 @@ nav input{
     height: 100vh;
   }
   .chat{
-    width: 100px;
+    width: 90px;
   }
 
   .last-chat{
