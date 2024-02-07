@@ -16,7 +16,6 @@ body{
     #DADBD4 15%,
     #DADBD4 100%);
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
   }
@@ -36,15 +35,13 @@ i{
 }
 
 .container{
-  margin: 0 auto;
   width: 80%;
-  height: 90vh;
-  /* overflow: hidden; */
+  align-items: center;
 }
 
 .row{
   width: 100%;
-  height: 90%;
+  height: 95vh;
 }
 
 .chat{
@@ -71,7 +68,8 @@ i{
 
 .active-chat .sms-chat{
   height: calc(100% - 60px - 65px);
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-width: 50px;
   background-image: url(../assets/img/mine.jpg);
 }
 
@@ -85,10 +83,6 @@ i{
   display: flex;
   /* height: 100%; */
   width: 100%;
-}
-
-.row:first-child{
-  margin-top: 30px;
 }
 
 .sms{
@@ -123,8 +117,36 @@ i{
 }
 
 .sms-input{
+  width: 100%;
   height: 65px;
   background-color: #EAEAEA;
+  justify-content: space-between;
+}
+
+.input-icon{
+  width: 10%;
+}
+
+.sms-input .write-sms{
+  align-items: center;
+  width: 80%;
+}
+
+.sms-input input{
+  /* width: 80%;  */
+  height: 75%;
+  width: 100%;
+  border: none;
+  border-radius: .2rem;
+  padding-left: 10px;
+}
+
+.input-icon{
+  align-items: center;
+  justify-content: center;
+}
+.input-icon i{
+  font-size: 2rem;
 }
 
 .top-nav{
@@ -197,6 +219,7 @@ nav input{
 .last-chat{
   background-color: #FAFAFA;
   overflow-y: scroll;
+  scrollbar-width: 10px;
   height: calc(100% - 60px - 90px - 45px)
 }
 
