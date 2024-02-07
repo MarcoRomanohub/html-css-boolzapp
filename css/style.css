@@ -92,12 +92,21 @@ i{
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
+  position: relative;
 }
 
 .sms-content{
   width: 92%;
   padding: 10px 0;
   /* height: 80%; */
+}
+
+.sms span{
+  font-size: .5rem;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  opacity: 60%;
 }
 
 .sent{
@@ -138,6 +147,9 @@ i{
   width: 100%;
   border: none;
   border-radius: .2rem;
+}
+
+input{
   padding-left: 10px;
 }
 
@@ -160,6 +172,14 @@ i{
 
 .chat-row{
   height: 90px;
+}
+
+.last-chat .chat-row:hover {
+  background-color: lightgray;
+}
+
+.last-chat .active:hover{
+  background-color: lightgray;
 }
 
 .notifications{
